@@ -48,8 +48,8 @@ public class ShootBall : MonoBehaviour
             //ball.AddForce(x, launchTopForce, launchFrontForce, ForceMode.Impulse);
             ball.AddForce(transform.TransformDirection(new Vector3(transform.rotation.x, launchTopForce, launchFrontForce)), ForceMode.Impulse);
             powerMultiplier = 1f;
-            launchFrontForce = 5f;
-            launchTopForce = 1f;
+            launchFrontForce = 0f;
+            launchTopForce = 0f;
         }
     }
 
