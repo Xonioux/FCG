@@ -12,24 +12,20 @@ public class BallForeshadowing : MonoBehaviour
     // I have been trying to find a solution to this but still can't seem to find a way that works properly...
     private void Update()
     {
-        ball = GameObject.Find("invisBall(Clone)").transform;
-
-        if (ball != GameObject.Find("invisBall(Clone)").transform)
-        {
-            this.GetComponent<BallForeshadowing>().enabled = false;
-        }
+        ball = GameObject.Find("InvisibleBall").transform;
     }
 
     // Checking if the invisible ball hit the border object and choosing the position where the ballmark is going to get placed
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Ball"))
+        if (col.gameObject.CompareTag("InvisBall"))
         {
             hitpointBall = col.ClosestPoint(ball.position);
             if (Vector3.Distance(hitpointBall, ball.position) < 0.03f)
             {
                 HitMark(hitpointBall, .7f);
                 Debug.Log("Hit Border");
+                this.GetComponent<BallForeshadowing>().enabled = false;
             }
         }
     }

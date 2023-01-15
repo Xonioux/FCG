@@ -9,7 +9,7 @@ public class ShootBall : MonoBehaviour
     public GameObject rightHand;
 
     public Rigidbody ballPrefab;
-    private float powerMultiplier = 1f;
+    public float powerMultiplier = 1f;
     public float minFrontLaunchForce;
     public float maxFrontLaunchForce;
     private float launchFrontForce;
@@ -18,6 +18,7 @@ public class ShootBall : MonoBehaviour
     private float launchTopForce;
 
     public bool isPressed;
+    private bool shotDone = false;
 
 
     void Update()
@@ -26,30 +27,41 @@ public class ShootBall : MonoBehaviour
         triggerReference.action.canceled += BoolFalse;
 
         // while using the button, the power multiplier will increase
-        if (isPressed == true)
+        if (isPressed == true && shotDone == false)
         {
             powerMultiplier += Time.deltaTime;
+            if (powerMultiplier >= 3f)
+            {
+                powerMultiplier = 3f;
+            }
         }
 
         // as soon as the button gets up, the timer stops and then the multiplier will apply to the original (minimal) power of the ball
         else if (isPressed == false && powerMultiplier > 1f)
         {
             Debug.Log(powerMultiplier);
-            if(launchFrontForce < maxFrontLaunchForce && launchTopForce < maxTopLaunchForce)
+            if((minFrontLaunchForce * powerMultiplier) < maxFrontLaunchForce && (minTopLaunchForce * powerMultiplier) < maxTopLaunchForce)
             {
-                launchFrontForce = (powerMultiplier * 10) * minFrontLaunchForce;
-                launchTopForce = (powerMultiplier * 5) * minTopLaunchForce;
+                launchFrontForce = (powerMultiplier) * minFrontLaunchForce;
+                launchTopForce = (powerMultiplier) * minTopLaunchForce;
             }
+            else if ((launchFrontForce * powerMultiplier) >= maxFrontLaunchForce && (launchTopForce * powerMultiplier) >= maxTopLaunchForce)
+            {
+                launchFrontForce = maxFrontLaunchForce;
+                launchTopForce = maxTopLaunchForce;
+            }
+
             //calculate the angle of the shot on the y
             Vector3 eulerRotation = new Vector3(transform.eulerAngles.x, rightHand.transform.eulerAngles.y, transform.eulerAngles.z);
             transform.rotation = Quaternion.Euler(eulerRotation);
+            ballPrefab.AddForce(transform.TransformDirection(new Vector3(transform.rotation.x, launchTopForce, launchFrontForce)), ForceMode.Impulse);
+            Debug.Log(launchFrontForce);
+            Debug.Log(launchTopForce);
 
-            Rigidbody ball = Instantiate(ballPrefab, transform.position, transform.rotation);
-            //ball.AddForce(x, launchTopForce, launchFrontForce, ForceMode.Impulse);
-            ball.AddForce(transform.TransformDirection(new Vector3(transform.rotation.x, launchTopForce, launchFrontForce)), ForceMode.Impulse);
             powerMultiplier = 1f;
             launchFrontForce = 0f;
             launchTopForce = 0f;
+            shotDone = true;
         }
     }
 

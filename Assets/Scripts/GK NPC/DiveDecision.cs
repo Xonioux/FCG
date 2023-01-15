@@ -5,6 +5,7 @@ using UnityEngine;
 public class DiveDecision : MonoBehaviour
 {
     public GameObject[] diveOptions;
+    public ShootBall sB;
     int chosen;
     void Pick()
     {
@@ -16,15 +17,16 @@ public class DiveDecision : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (sB.isPressed == false && sB.powerMultiplier > 1f)
         {
+            Debug.Log("Jump");
             Pick();
         }
     }
 
     IEnumerator backInPosition()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         transform.position = new Vector3(diveOptions[0].transform.position.x, transform.position.y, transform.position.z);
         Debug.Log("Gets Back");
     }
