@@ -3,18 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - InvisBall
+  - RealBall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - InvisBall
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - RealBall
+  - Border
+  - GK NPC
   - 
   - 
   - 
