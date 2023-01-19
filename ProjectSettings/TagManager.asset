@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InvisBall
   - RealBall
+  - Barrier
   layers:
   - Default
   - TransparentFX
