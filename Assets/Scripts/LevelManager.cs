@@ -64,7 +64,8 @@ public class LevelManager : MonoBehaviour
             shootingTutorial.SetActive(true);
             StartCoroutine(stFlashText(3));
         }
-        else if (isShootingLevel == true && tutorialRead == true && stText.activeInHierarchy == true)
+        
+        if (isShootingLevel == true && tutorialRead == true && stText.activeInHierarchy == true)
         {
             shootingTutorial.SetActive(false);
         }
