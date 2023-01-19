@@ -1088,13 +1088,31 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootDirection",
-                    "type": "Value",
-                    "id": "70de54ff-65e3-4dd5-bda0-8a3ae0d29b79",
-                    "expectedControlType": "Axis",
+                    "name": "MenuButtonOpen",
+                    "type": "Button",
+                    "id": "f8e39df8-7535-472d-a13c-31f9cf7b0c97",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MenuButtonClosed",
+                    "type": "Button",
+                    "id": "cc9c9e9e-a916-463a-b771-91c472613afe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressToContinue",
+                    "type": "Button",
+                    "id": "1ca9a826-8b1b-4972-be0b-2ef71c739366",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1111,12 +1129,34 @@
                 },
                 {
                     "name": "",
-                    "id": "ce458a4b-c3e2-49f5-9692-fec06f02445e",
-                    "path": "<XRController>{RightHand}/deviceRotation/y",
+                    "id": "8a338ae4-0da9-4916-8a65-90658a090154",
+                    "path": "<XRController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShootDirection",
+                    "action": "MenuButtonOpen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c0c31c60-52fb-42fc-8af7-17c8357e1b1b",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuButtonClosed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f8230b0-1713-4eb9-82d9-7133a3209128",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressToContinue",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
