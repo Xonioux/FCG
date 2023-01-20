@@ -37,6 +37,7 @@ Transform:
   - {fileID: 3911387522760124532}
   - {fileID: 7339123378427706776}
   - {fileID: 6353321771341070110}
+  - {fileID: 6417002596734908569}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -52,7 +53,6 @@ GameObject:
   - component: {fileID: 5087787723816357069}
   - component: {fileID: 2969567743934755042}
   - component: {fileID: 3182305017251081313}
-  - component: {fileID: 7003003175349973487}
   m_Layer: 0
   m_Name: RIghtSideNetCollider
   m_TagString: Untagged
@@ -138,18 +138,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7003003175349973487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156128993823453862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1909105981406757407
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +150,6 @@ GameObject:
   - component: {fileID: 4361292362260288510}
   - component: {fileID: 330866484616299890}
   - component: {fileID: 2038098155804790509}
-  - component: {fileID: 5619687523702677599}
   m_Layer: 0
   m_Name: BackNetCollider
   m_TagString: Untagged
@@ -248,18 +235,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5619687523702677599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909105981406757407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2042194371888138615
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +247,6 @@ GameObject:
   - component: {fileID: 2870249017679524794}
   - component: {fileID: 5610490270232917611}
   - component: {fileID: 6610448149502054719}
-  - component: {fileID: 6052324024128204632}
   m_Layer: 0
   m_Name: LeftSideNetCollider
   m_TagString: Untagged
@@ -358,18 +332,117 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6052324024128204632
+--- !u!1 &3216116453021296026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6417002596734908569}
+  - component: {fileID: 5665681070490404305}
+  - component: {fileID: 6208299014824187171}
+  - component: {fileID: 6106295962717400664}
+  - component: {fileID: 5939507198926207363}
+  m_Layer: 0
+  m_Name: GoalChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6417002596734908569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3216116453021296026}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.17, y: -0.17, z: 6.3069534}
+  m_LocalScale: {x: 3.455155, y: 4.218994, z: 11.685}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2440090242880533883}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5665681070490404305
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3216116453021296026}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6208299014824187171
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3216116453021296026}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6106295962717400664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3216116453021296026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5939507198926207363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042194371888138615}
+  m_GameObject: {fileID: 3216116453021296026}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalScored: 0
 --- !u!1 &3597804007328450390
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +455,6 @@ GameObject:
   - component: {fileID: 181520189628621847}
   - component: {fileID: 1336512210082693446}
   - component: {fileID: 4201797763066237711}
-  - component: {fileID: 6814353555305734481}
   m_Layer: 0
   m_Name: TopNetCollider
   m_TagString: Untagged
@@ -468,18 +540,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6814353555305734481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3597804007328450390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3742698496513104191
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +552,7 @@ GameObject:
   - component: {fileID: 3815230363298306253}
   - component: {fileID: 4099537445004837254}
   - component: {fileID: 2839148297268146692}
-  - component: {fileID: 6985450480268247706}
+  - component: {fileID: 3277549301758683845}
   m_Layer: 0
   m_Name: CrossbarCollider
   m_TagString: Untagged
@@ -579,7 +639,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &6985450480268247706
+--- !u!114 &3277549301758683845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -588,7 +648,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3742698496513104191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 77cd0782e1be19f499c082613024ec66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6079340239649532030
@@ -687,6 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalScored: 0
 --- !u!1 &6823868915343462451
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +760,7 @@ GameObject:
   - component: {fileID: 5406952664345356951}
   - component: {fileID: 5008287696989601129}
   - component: {fileID: 1826442293652926136}
-  - component: {fileID: 2178387512739734589}
+  - component: {fileID: 7310816297278812658}
   m_Layer: 0
   m_Name: LeftPostCollider
   m_TagString: Untagged
@@ -786,7 +847,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &2178387512739734589
+--- !u!114 &7310816297278812658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -795,7 +856,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6823868915343462451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 77cd0782e1be19f499c082613024ec66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7522160604897476077
@@ -810,7 +871,7 @@ GameObject:
   - component: {fileID: 849865751937181287}
   - component: {fileID: 6198101737142497505}
   - component: {fileID: 3865531455556007917}
-  - component: {fileID: 3086260252980166618}
+  - component: {fileID: 8378640134163140993}
   m_Layer: 0
   m_Name: RightPostCollider
   m_TagString: Untagged
@@ -897,7 +958,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &3086260252980166618
+--- !u!114 &8378640134163140993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -906,7 +967,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7522160604897476077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 77cd0782e1be19f499c082613024ec66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8129153770186321642
@@ -1005,3 +1066,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0844877bbd8ae3941a79f17bc8d37b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalScored: 0

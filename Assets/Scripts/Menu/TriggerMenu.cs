@@ -17,7 +17,7 @@ public class TriggerMenu : MonoBehaviour
     void Start()
     {
         playerMenu.SetActive(false);
-        buttonEffected = true;
+        buttonEffected = false;
 
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
@@ -27,11 +27,11 @@ public class TriggerMenu : MonoBehaviour
     {
         triggerMenuOpen.action.started += MBOpen;
         triggerMenuClosed.action.started += MBClose;
-        if (buttonEffected == false && sceneName != "StartingScene")
+        if (buttonEffected == true && sceneName != "StartingScene")
         {
             playerMenu.SetActive(true);
         }
-        else if (buttonEffected == true && sceneName != "StartingScene")
+        else if (buttonEffected == false && sceneName != "StartingScene")
         {
             playerMenu.SetActive(false);
         }
@@ -39,11 +39,11 @@ public class TriggerMenu : MonoBehaviour
 
     void MBOpen(InputAction.CallbackContext context)
     {
-        buttonEffected = false;
+        buttonEffected = true;
     }
 
     void MBClose(InputAction.CallbackContext context)
     {
-        buttonEffected = true;
+        buttonEffected = false;
     }
 }
