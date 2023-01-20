@@ -6,10 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Save : MonoBehaviour
 {
     GameObject ball;
-    public bool ballSaved;
+    public static bool ballSaved;
 
     // Checking with the handcollider if the ball got hit by the hand
-    private void OnCollisionEnter(Collision col)
+    public void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("RealBall"))
         {
@@ -21,4 +21,5 @@ public class Save : MonoBehaviour
             Destroy(col.gameObject, 4f);
         }
     }
+
 }

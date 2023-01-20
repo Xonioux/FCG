@@ -259,10 +259,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 7188850761732814968}
+        m_TargetAssemblyTypeName: StartingMenu, Assembly-CSharp
+        m_MethodName: BackToMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7188850761732814968}
         m_TargetAssemblyTypeName: StartingMenu, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -2406,6 +2406,7 @@ GameObject:
   - component: {fileID: 53704309422528321}
   - component: {fileID: 53704309422528326}
   - component: {fileID: 53704309422528327}
+  - component: {fileID: 7188850761732814968}
   m_Layer: 0
   m_Name: playerCanvas
   m_TagString: Untagged
@@ -2514,6 +2515,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &7188850761732814968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53704309422528325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0e3e5d6dbd3734da68eb34057a6661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &53704309441185434
 GameObject:
   m_ObjectHideFlags: 0

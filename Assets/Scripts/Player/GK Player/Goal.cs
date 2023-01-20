@@ -15,7 +15,6 @@ public class Goal : MonoBehaviour
 
         if (col.gameObject.CompareTag("RealBall"))
         {
-            Debug.Log("Goal!!!");
             goalScored = true;
         }
     }

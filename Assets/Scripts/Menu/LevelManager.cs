@@ -51,6 +51,12 @@ public class LevelManager : MonoBehaviour
             isGoalkeepingLevel = false;
         }
 
+        if (sceneName == "Euroborg - GK")
+        {
+            isGoalkeepingLevel = true;
+            isShootingLevel = false;
+        }
+
         gkText.SetActive(false);
         stText.SetActive(false);
     }
@@ -112,7 +118,7 @@ public class LevelManager : MonoBehaviour
         {
             if (sBS.ballShot  == true)
             {
-                StartCoroutine(levelResult(3));
+                StartCoroutine(levelResult(2));
             }
         }
     }
@@ -134,21 +140,29 @@ public class LevelManager : MonoBehaviour
     IEnumerator levelResult(int secs)
     {
         yield return new WaitForSeconds(secs);
-        if (shootingTutorial.activeInHierarchy == true && goalCheck.goalScored == true)
+        if (isShootingLevel == true && goalCheck.goalScored == true)
         {
-            
+            Debug.Log("Scored");
         }
-        else if (shootingTutorial.activeInHierarchy == true && goalCheck.goalScored == false)
+        
+        if (isShootingLevel == true && goalCheck.goalScored == false)
         {
-
+            Debug.Log("Missed chance");
         }
-        else if (goalkeepingTutorial.activeInHierarchy == true && saveCheck.ballSaved == true)
+        
+        if (isGoalkeepingLevel == true && Save.ballSaved == true)
         {
             Debug.Log("Saved");
         }
-        else if (goalkeepingTutorial.activeInHierarchy == true && saveCheck.ballSaved == false)
+        
+        if (isGoalkeepingLevel == true &&  goalCheck.goalScored == true)
         {
-            Debug.Log("Either Scored or Missed");
+            Debug.Log("Scored against you");
+        }
+
+        if (isGoalkeepingLevel == true && Save.ballSaved == false && goalCheck.goalScored == false)
+        {
+            Debug.Log("Missed shot");
         }
         
     }
