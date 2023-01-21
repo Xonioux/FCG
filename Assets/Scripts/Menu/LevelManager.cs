@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class LevelManager : MonoBehaviour
 {
     public InputActionReference pbuttonRight = null;
     public bool isShootingLevel;
     public bool isGoalkeepingLevel;
-
     public bool tutorialRead;
 
     public TriggerMenu tM = null;
     public ShootBall sB = null;
     public SingleBallShot sBS = null;
+    public ContinuousMoveProviderBase cB = null;
     //public ActionBasedContinuousTurnProvider lSturn;
     //public ActionBasedContinuousMoveProvider lSmove;
 
@@ -29,6 +30,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        tutorialRead = false;
         //Checking if which scene is active right now
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
@@ -90,16 +92,19 @@ public class LevelManager : MonoBehaviour
         }
 
         //Disables the controls of the player while the tutorial screen is up
-        if (goalkeepingTutorial.activeInHierarchy == true || shootingTutorial.activeInHierarchy == true)
+        if (tutorialRead == false)
         {
+            cB.enabled = false;
             tM.buttonEffected = false;
             if(shootingTutorial.activeInHierarchy == true && isShootingLevel == true)
             {
                 sB.enabled = false;
             }
+
         }
-        else if (goalkeepingTutorial.activeInHierarchy == false || shootingTutorial.activeInHierarchy == false)
+        else if (tutorialRead == true)
         {
+            cB.enabled = true;
             if(shootingTutorial.activeInHierarchy == false && isShootingLevel == true)
             {
                 sB.enabled = true;

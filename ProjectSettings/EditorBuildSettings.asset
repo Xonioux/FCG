@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenarios/National/Cup - Shot2.unity
     guid: 82b746d96aa13834f9133e39e563f61f
+  - enabled: 1
+    path: Assets/Scenes/Scenarios/Euroborg/Euroborg - GK.unity
+    guid: 7c32de012ab2e574290888a6885e2bc1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1c5b12010900a354dbe1af02bfb8d6d9, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4f31e6e0040f91843a1401ce4d3f26e0, type: 2}

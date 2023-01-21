@@ -20,6 +20,11 @@ public class StartingMenu : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    public void PlayEuroborg1()
+    {
+        SceneManager.LoadScene(4);
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);

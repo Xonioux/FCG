@@ -30,10 +30,12 @@ public class TriggerMenu : MonoBehaviour
         if (buttonEffected == true && sceneName != "StartingScene")
         {
             playerMenu.SetActive(true);
+            Time.timeScale = 0;
         }
         else if (buttonEffected == false && sceneName != "StartingScene")
         {
             playerMenu.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 
