@@ -16,9 +16,6 @@ public class LevelManager : MonoBehaviour
     public ShootBall sB = null;
     public SingleBallShot sBS = null;
     public ContinuousMoveProviderBase cB = null;
-    //public ActionBasedContinuousTurnProvider lSturn;
-    //public ActionBasedContinuousMoveProvider lSmove;
-
     public Goal goalCheck = null;
     public Save saveCheck = null;
 
@@ -53,7 +50,19 @@ public class LevelManager : MonoBehaviour
             isGoalkeepingLevel = false;
         }
 
-        if (sceneName == "Euroborg - GK")
+        if (sceneName == "Euroborg - GK1")
+        {
+            isGoalkeepingLevel = true;
+            isShootingLevel = false;
+        }
+
+        if (sceneName == "Euroborg - Shot")
+        {
+            isGoalkeepingLevel = false;
+            isShootingLevel = true;
+        }
+
+        if (sceneName == "Euroborg - GK2")
         {
             isGoalkeepingLevel = true;
             isShootingLevel = false;
