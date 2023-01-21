@@ -46158,11 +46158,11 @@ MonoBehaviour:
   Border: {fileID: 633617220}
   Ball: {fileID: 1617962310}
   invisBall: {fileID: 529049689}
-  XminAngleRot: -13
-  XmaxAngleRot: -5
+  XminAngleRot: -14
+  XmaxAngleRot: -6
   YminAngleRot: -105
   YmaxAngleRot: -97
-  forceMultiplier: 40
+  forceMultiplier: 35
   ballShot: 0
 --- !u!65 &2014552595
 BoxCollider:

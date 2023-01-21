@@ -195,7 +195,7 @@ public class LevelManager : MonoBehaviour
             STMiss.SetActive(true);
         }
         
-        if (isGoalkeepingLevel == true && Save.ballSaved == true)
+        if (isGoalkeepingLevel == true && Save.ballSaved == true && goalCheck.goalScored == false)
         {
             Debug.Log("Saved");
             GKSave.SetActive(true);
