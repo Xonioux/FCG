@@ -10982,8 +10982,8 @@ RectTransform:
   - {fileID: 1566028959}
   - {fileID: 1052896429}
   - {fileID: 1795617540}
-  - {fileID: 1232898845}
   - {fileID: 1046057264}
+  - {fileID: 1232898845}
   - {fileID: 1788722206}
   - {fileID: 753619270}
   - {fileID: 1523795490}
@@ -12671,7 +12671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kies Level
+  m_text: Redding
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -33450,7 +33450,7 @@ GameObject:
   - component: {fileID: 1046057266}
   - component: {fileID: 1046057265}
   m_Layer: 5
-  m_Name: SelectLevelButton (8)
+  m_Name: InternationalShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33464,13 +33464,13 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046057263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000000029802322}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.091662884, y: 0.08, z: 0.067848176}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1448139522}
   m_Father: {fileID: 359849818}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -33521,13 +33521,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 299209379}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 299209385}
+        m_TargetAssemblyTypeName: StartingMenu, Assembly-CSharp
+        m_MethodName: PlayInternational2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -40155,7 +40155,7 @@ GameObject:
   - component: {fileID: 1232898847}
   - component: {fileID: 1232898846}
   m_Layer: 5
-  m_Name: SelectLevelButton (7)
+  m_Name: InternationalPenalty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40175,7 +40175,7 @@ RectTransform:
   m_Children:
   - {fileID: 868552906}
   m_Father: {fileID: 359849818}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40226,13 +40226,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 299209379}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 299209385}
+        m_TargetAssemblyTypeName: StartingMenu, Assembly-CSharp
+        m_MethodName: PlayInternational3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -43296,6 +43296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cB: {fileID: 1799693346}
+  pS: {fileID: 53704307995958742}
   isStartingScene: 0
 --- !u!4 &1331203692
 Transform:
@@ -46691,7 +46692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kies Level
+  m_text: 3 - 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -57814,7 +57815,7 @@ GameObject:
   - component: {fileID: 1795617542}
   - component: {fileID: 1795617541}
   m_Layer: 5
-  m_Name: SelectLevelButton (6)
+  m_Name: InternationalGK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57885,13 +57886,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 299209379}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 299209385}
+        m_TargetAssemblyTypeName: StartingMenu, Assembly-CSharp
+        m_MethodName: PlayInternational1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -58283,7 +58284,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800025047
 GameObject:
@@ -68012,7 +68013,7 @@ PrefabInstance:
       objectReference: {fileID: 1799693349}
     - target: {fileID: 53704308934599887, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 53704308934599887, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68024,7 +68025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 53704308934599887, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35
+      value: -39.87
       objectReference: {fileID: 0}
     - target: {fileID: 53704308934599887, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68056,3 +68057,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+--- !u!1 &53704307995958742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1995014015651280235, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 53704307995958741}
+  m_PrefabAsset: {fileID: 0}

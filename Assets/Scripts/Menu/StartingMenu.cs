@@ -50,6 +50,11 @@ public class StartingMenu : MonoBehaviour
         SceneManager.LoadScene(9);
     }
 
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);

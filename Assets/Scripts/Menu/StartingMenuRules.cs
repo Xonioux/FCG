@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class StartingMenuRules : MonoBehaviour
 {
     public ContinuousMoveProviderBase cB = null;
+    public GameObject pS = null;
     public bool isStartingScene;
     
     void Start()
@@ -28,8 +29,9 @@ public class StartingMenuRules : MonoBehaviour
     {
         if (isStartingScene == true)
         {
-            cB.enabled = true;
+            cB.moveSpeed = 5f;
             Time.timeScale = 1f;
+            pS.SetActive(false);
         }
     }
 }

@@ -7476,6 +7476,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332450189}
   m_Mesh: {fileID: -9193184200935584902, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!1 &336965860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1995014015651280235, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &339000414
 GameObject:
   m_ObjectHideFlags: 0
@@ -8555,6 +8560,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380059651}
   m_Mesh: {fileID: 1560646820430254623, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!1 &385028186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8160530759954296017, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &385028187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7063376827580790212, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &385028188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2604962396765038093, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &385028189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 730680809673015986, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &396589775
 GameObject:
   m_ObjectHideFlags: 0
@@ -48412,6 +48437,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 882688680}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: pS
+      value: 
+      objectReference: {fileID: 336965860}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: tM
       value: 
       objectReference: {fileID: 11728920}
@@ -48420,6 +48449,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2014552594}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: GKFail
+      value: 
+      objectReference: {fileID: 385028188}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: GKSave
+      value: 
+      objectReference: {fileID: 385028189}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: STMiss
+      value: 
+      objectReference: {fileID: 385028186}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: gkText
       value: 
       objectReference: {fileID: 11728918}
@@ -48427,6 +48468,10 @@ PrefabInstance:
       propertyPath: stText
       value: 
       objectReference: {fileID: 11728919}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: STScore
+      value: 
+      objectReference: {fileID: 385028187}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: goalCheck
       value: 

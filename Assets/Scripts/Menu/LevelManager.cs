@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class LevelManager : MonoBehaviour
     public bool isGoalkeepingLevel;
     public bool tutorialRead;
 
+    
     public TriggerMenu tM = null;
     public ShootBall sB = null;
     public SingleBallShot sBS = null;
@@ -19,11 +21,17 @@ public class LevelManager : MonoBehaviour
     public Goal goalCheck = null;
     public Save saveCheck = null;
 
+    public GameObject pS = null;
     public GameObject stText;
     public GameObject gkText;
 
     public GameObject shootingTutorial;
     public GameObject goalkeepingTutorial;
+
+    public GameObject GKSave;
+    public GameObject GKFail;
+    public GameObject STScore;
+    public GameObject STMiss;
 
     void Start()
     {
@@ -68,6 +76,24 @@ public class LevelManager : MonoBehaviour
             isShootingLevel = false;
         }
 
+        if (sceneName == "International - GK")
+        {
+            isGoalkeepingLevel = true;
+            isShootingLevel = false;
+        }
+
+        if (sceneName == "International - Shot")
+        {
+            isGoalkeepingLevel = false;
+            isShootingLevel = true;
+        }
+
+        if (sceneName == "International - Penalty")
+        {
+            isGoalkeepingLevel = false;
+            isShootingLevel = true;
+        }
+
         gkText.SetActive(false);
         stText.SetActive(false);
     }
@@ -81,11 +107,13 @@ public class LevelManager : MonoBehaviour
         {
             goalkeepingTutorial.SetActive(true);
             StartCoroutine(gkFlashText(3));
+            pS.SetActive(false);
         }
 
         if (isGoalkeepingLevel == true && tutorialRead == true && gkText.activeInHierarchy == true)
         {
             goalkeepingTutorial.SetActive(false);
+            pS.SetActive(false);
         }
 
         //Sets the tutorial screen up for a shooting level
@@ -98,12 +126,13 @@ public class LevelManager : MonoBehaviour
         if (isShootingLevel == true && tutorialRead == true && stText.activeInHierarchy == true)
         {
             shootingTutorial.SetActive(false);
+            pS.SetActive(true);
         }
 
         //Disables the controls of the player while the tutorial screen is up
         if (tutorialRead == false)
         {
-            cB.enabled = false;
+            cB.moveSpeed = 0f;
             tM.buttonEffected = false;
             if(shootingTutorial.activeInHierarchy == true && isShootingLevel == true)
             {
@@ -113,7 +142,7 @@ public class LevelManager : MonoBehaviour
         }
         else if (tutorialRead == true)
         {
-            cB.enabled = true;
+            cB.moveSpeed = 5f;
             if(shootingTutorial.activeInHierarchy == false && isShootingLevel == true)
             {
                 sB.enabled = true;
@@ -157,21 +186,25 @@ public class LevelManager : MonoBehaviour
         if (isShootingLevel == true && goalCheck.goalScored == true)
         {
             Debug.Log("Scored");
+            STScore.SetActive(true);
         }
         
         if (isShootingLevel == true && goalCheck.goalScored == false)
         {
             Debug.Log("Missed chance");
+            STMiss.SetActive(true);
         }
         
         if (isGoalkeepingLevel == true && Save.ballSaved == true)
         {
             Debug.Log("Saved");
+            GKSave.SetActive(true);
         }
         
         if (isGoalkeepingLevel == true &&  goalCheck.goalScored == true)
         {
             Debug.Log("Scored against you");
+            GKFail.SetActive(true);
         }
 
         if (isGoalkeepingLevel == true && Save.ballSaved == false && goalCheck.goalScored == false)

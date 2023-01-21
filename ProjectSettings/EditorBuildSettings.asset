@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenarios/Euroborg/Euroborg - GK2.unity
     guid: 15a5a05613317c84cb54bb0ac628f7bb
+  - enabled: 1
+    path: Assets/Scenes/Scenarios/International/International - GK.unity
+    guid: b463856b8d07df84f90b0c49f2af09f4
+  - enabled: 1
+    path: Assets/Scenes/Scenarios/International/International - Shot.unity
+    guid: 65c6dc7e00cf70642b79e96272ed1714
+  - enabled: 1
+    path: Assets/Scenes/Scenarios/International/International - Penalty.unity
+    guid: be693ad063daf444bb6b27d3cf336ced
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1c5b12010900a354dbe1af02bfb8d6d9, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4f31e6e0040f91843a1401ce4d3f26e0, type: 2}
