@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.UI;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -12,7 +13,6 @@ public class LevelManager : MonoBehaviour
     public bool isShootingLevel;
     public bool isGoalkeepingLevel;
     public bool tutorialRead;
-
     
     public TriggerMenu tM = null;
     public ShootBall sB = null;
@@ -20,10 +20,12 @@ public class LevelManager : MonoBehaviour
     public ContinuousMoveProviderBase cB = null;
     public Goal goalCheck = null;
     public Save saveCheck = null;
+    public CountdownTimer timer;
 
     public GameObject pS = null;
     public GameObject stText;
     public GameObject gkText;
+
 
     public GameObject shootingTutorial;
     public GameObject goalkeepingTutorial;
@@ -35,7 +37,6 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        tutorialRead = false;
         //Checking if which scene is active right now
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
@@ -93,6 +94,7 @@ public class LevelManager : MonoBehaviour
             isGoalkeepingLevel = false;
             isShootingLevel = true;
         }
+        
 
         gkText.SetActive(false);
         stText.SetActive(false);
@@ -142,11 +144,16 @@ public class LevelManager : MonoBehaviour
         }
         else if (tutorialRead == true)
         {
-            cB.moveSpeed = 5f;
-            if(shootingTutorial.activeInHierarchy == false && isShootingLevel == true)
+            this.GetComponent<CountdownTimer>().enabled = true;
+            if (timer.countdowntimerDone == true)
             {
-                sB.enabled = true;
+                cB.moveSpeed = 5f;
+                if(shootingTutorial.activeInHierarchy == false && isShootingLevel == true)
+                {
+                    sB.enabled = true;
+                }
             }
+            
         }
 
         if (shootingTutorial.activeInHierarchy == false && isShootingLevel == true)

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2636044548348229293}
   - component: {fileID: 6071331223568219232}
+  - component: {fileID: 2846526310078139637}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -54,7 +55,29 @@ MonoBehaviour:
   cB: {fileID: 0}
   goalCheck: {fileID: 0}
   saveCheck: {fileID: 0}
+  timer: {fileID: 2846526310078139637}
+  pS: {fileID: 0}
   stText: {fileID: 0}
   gkText: {fileID: 0}
   shootingTutorial: {fileID: 0}
   goalkeepingTutorial: {fileID: 0}
+  GKSave: {fileID: 0}
+  GKFail: {fileID: 0}
+  STScore: {fileID: 0}
+  STMiss: {fileID: 0}
+--- !u!114 &2846526310078139637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552942448973956371}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c32d56aa49886e48a5d0846e3dfc028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdown: 3
+  countdownText: {fileID: 0}
+  lM: {fileID: 6071331223568219232}
+  countdowntimerDone: 0

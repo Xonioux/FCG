@@ -7,6 +7,7 @@ public class SingleBallShot : MonoBehaviour
     public GameObject Border;
     public GameObject Ball;
     public GameObject invisBall;
+    public CountdownTimer timer;
 
     private GameObject ballClone;
     private GameObject ballReal;
@@ -18,11 +19,12 @@ public class SingleBallShot : MonoBehaviour
     public float forceMultiplier = 10f;
 
     public bool ballShot;
+    private bool shotLoaded;
 
-    private void Update()
+    void Update()
     {
         //Will be changed to after the tutorial screen has been closed
-        if(Input.GetKeyDown(KeyCode.T))
+        if(timer.countdowntimerDone == true)
         {
             Shoot();
         }
@@ -31,13 +33,18 @@ public class SingleBallShot : MonoBehaviour
     // The first shot to calculate the ballmark for the goalkeeper
     public void Shoot()
     {
-        var shotAngle = GetRandomAngle();
-        transform.rotation = Quaternion.Euler(shotAngle.x, shotAngle.y, shotAngle.z);
+        if (!shotLoaded)
+        {
+            shotLoaded = true;
+            var shotAngle = GetRandomAngle();
+            transform.rotation = Quaternion.Euler(shotAngle.x, shotAngle.y, shotAngle.z);
 
-        //ballClone = Instantiate(invisBall, transform.position, transform.rotation);
-        invisBall.GetComponent<Rigidbody>().AddForce(gameObject.transform.TransformDirection(Vector3.forward) * forceMultiplier, ForceMode.Impulse);
+            //ballClone = Instantiate(invisBall, transform.position, transform.rotation);
+            invisBall.GetComponent<Rigidbody>().AddForce(gameObject.transform.TransformDirection(Vector3.forward) * forceMultiplier, ForceMode.Impulse);
 
-        StartCoroutine(shotDelay());
+            StartCoroutine(shotDelay());
+        }
+        
     }
 
     // Shooting the real ball with a 3 second delay

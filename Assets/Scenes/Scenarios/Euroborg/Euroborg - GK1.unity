@@ -5484,6 +5484,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262562242}
   m_Mesh: {fileID: 1560646820430254623, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!114 &263551707 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6828248591311980832, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266628918
 GameObject:
   m_ObjectHideFlags: 0
@@ -45700,6 +45711,7 @@ MonoBehaviour:
   Border: {fileID: 633617220}
   Ball: {fileID: 1617962310}
   invisBall: {fileID: 529049689}
+  timer: {fileID: 7291136315146325719}
   XminAngleRot: -15
   XmaxAngleRot: -5
   YminAngleRot: -130
@@ -48380,6 +48392,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 331782211363173406, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: countdownText
+      value: 
+      objectReference: {fileID: 263551707}
     - target: {fileID: 6041064133316113393, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -48490,3 +48506,14 @@ PrefabInstance:
       objectReference: {fileID: 11728916}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 302074ef50ca754429acb272af921c42, type: 3}
+--- !u!114 &7291136315146325719 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 331782211363173406, guid: 302074ef50ca754429acb272af921c42, type: 3}
+  m_PrefabInstance: {fileID: 7291136315146325718}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c32d56aa49886e48a5d0846e3dfc028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

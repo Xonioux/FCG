@@ -4353,6 +4353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 331782211363173406, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: countdownText
+      value: 
+      objectReference: {fileID: 1126558393}
     - target: {fileID: 6041064133316113393, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4426,6 +4430,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 173759735}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: GKFail
       value: 
       objectReference: {fileID: 461698238}
@@ -4438,6 +4446,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 461698236}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: cdText
+      value: 
+      objectReference: {fileID: 1126558393}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: gkText
       value: 
       objectReference: {fileID: 1490716354}
@@ -4449,6 +4461,18 @@ PrefabInstance:
       propertyPath: STScore
       value: 
       objectReference: {fileID: 461698237}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: number1
+      value: 
+      objectReference: {fileID: 1606185492}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: number2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: number3
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: goalCheck
       value: 
@@ -4476,6 +4500,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &173759735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 331782211363173406, guid: 302074ef50ca754429acb272af921c42, type: 3}
+  m_PrefabInstance: {fileID: 173759733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c32d56aa49886e48a5d0846e3dfc028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &174569335
@@ -26245,6 +26280,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125436302}
   m_Mesh: {fileID: 1560646820430254623, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!114 &1126558393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6828248591311980832, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1490716350}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606185492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1127771062
 GameObject:
   m_ObjectHideFlags: 0
@@ -35204,6 +35250,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5109171603443571902, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828248591311980832, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_text
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8299835248268690410, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
       propertyPath: sB
       value: 
@@ -37395,6 +37449,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601417667}
   m_Mesh: {fileID: 680147432066352129, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!1 &1606185492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6402247698015276182, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1490716350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1609583440
 GameObject:
   m_ObjectHideFlags: 0
