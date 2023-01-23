@@ -149,7 +149,7 @@ public class LevelManager : MonoBehaviour
             {
 
             //SOUNDDDDDDDDDDDDDDDDDDDDDDDS//    
-            FindObjectOfType<AudioManager>().Play("Cheering");
+           // FindObjectOfType<AudioManager>().Play("Cheering");
             //SOUNNNNNNNNNNNNNNNNNNNNNNNNNNNDDDDDDDDDDDDS//
                 
                 cB.moveSpeed = 5f;

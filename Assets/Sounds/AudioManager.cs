@@ -33,12 +33,12 @@ public class AudioManager : MonoBehaviour
 
     }
 
-//IF I WANT TO PLAY SOMETHING ALL THE TIME PUT IT HERE//
+    //IF I WANT TO PLAY SOMETHING ALL THE TIME PUT IT HERE//
 
-   void Start ()
-   {
-        Play("Anthem");
-   }
+    void Start()
+    {
+        Play("Crowd Sound");
+    }
 
 
 

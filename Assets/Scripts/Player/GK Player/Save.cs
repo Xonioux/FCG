@@ -17,8 +17,8 @@ public class Save : MonoBehaviour
             ballSaved = true;
             
             //AUDIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO//
-           // FindObjectOfType<AudioManager>().Play("Ball Hit");
-            //FindObjectOfType<AudioManager>().Play("Cheering");
+            FindObjectOfType<AudioManager>().Play("Ball Hit");
+            FindObjectOfType<AudioManager>().Play("Cheering");
 
             // Creating a little haptic feedback for the controller when the ball gets saved
             GetComponentInParent<XRBaseController>().SendHapticImpulse(.5f, .25f);

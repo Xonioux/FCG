@@ -30,7 +30,7 @@ public class StartingMenuRules : MonoBehaviour
         if (isStartingScene == true)
         {
             //SOUNNNNNNNNNNNNNND//
-          //  FindObjectOfType<AudioManager>().Play("Anthem");
+          //  FindObjectOfType<AudioManager>().Play("Crowd Sound");
             //SOUNDDDDDDDDDDDDDDD//
 
             cB.moveSpeed = 5f;
