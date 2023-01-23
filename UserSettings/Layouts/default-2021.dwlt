@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 106
+  controlID: 114
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 107
+  controlID: 102
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 108
+  controlID: 103
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 304.80005
     height: 770.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 1840710
+  m_LastSelectedObjectID: -40684
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,10 +329,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 286
-    y: 73
-    width: 1251
-    height: 605
+    x: 222.40001
+    y: 73.6
+    width: 1006.7999
+    height: 488.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 86b30000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7298ffff56c1ffff30c5ffff
+      m_ExpandedIDs: 2efbffffa865000026720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -463,7 +463,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 11}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -696,9 +696,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 33.458214, y: -3.419578, z: -82.7675}
+    m_Target: {x: -73.868645, y: 7.1236935, z: -30.730122}
     speed: 2
-    m_Value: {x: 33.458214, y: -3.419578, z: -82.7675}
+    m_Value: {x: -73.868645, y: 7.1236935, z: -30.730122}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -732,7 +732,7 @@ MonoBehaviour:
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0.05, y: 0.05}
+      m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
         m_Target: 0
@@ -745,20 +745,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1223732, y: -0.22721961, z: 0.03008777, w: -0.96600974}
+    m_Target: {x: 0.25947142, y: 0.12137139, z: -0.032836568, w: 0.957607}
     speed: 2
-    m_Value: {x: -0.122331366, y: -0.22714193, z: 0.030077484, w: -0.96567947}
+    m_Value: {x: 0.25945252, y: 0.12136255, z: -0.032834176, w: 0.95753723}
   m_Size:
-    m_Target: 41.217823
+    m_Target: 21.907703
     speed: 2
-    m_Value: 41.217823
+    m_Value: 21.907703
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.4202896
+    m_SpeedNormalized: 0.7099998
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -909,22 +909,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Scenarios/National
+    - Assets/Scripts/Menu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Scenarios/National
+  - Assets/Scripts/Menu
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Github desktop\FCG
+  m_LastProjectPath: C:\Users\bedir\OneDrive\Documents\GitHub\FCG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 67.80002}
-    m_SelectedIDs: 82b30000
-    m_LastClickedID: 45954
-    m_ExpandedIDs: 00000000ecb20000eeb200000ab3000000ca9a3b
+    scrollPos: {x: 0, y: 435.80002}
+    m_SelectedIDs: c47f0000
+    m_LastClickedID: 32708
+    m_ExpandedIDs: 000000009a7f00009c7f00009e7f0000a07f0000a27f0000a47f0000a67f0000a87f0000aa7f0000ac7f0000ae7f0000b07f0000b27f0000b47f0000b67f0000b87f0000ba7f0000c27f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -952,7 +952,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 000000009a7f00009c7f00009e7f0000a07f0000a27f0000a47f0000a67f0000a87f0000aa7f0000ac7f0000ae7f0000b07f0000b27f0000b47f0000b67f0000b87f0000ba7f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
