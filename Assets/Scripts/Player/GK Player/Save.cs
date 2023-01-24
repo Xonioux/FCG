@@ -18,7 +18,7 @@ public class Save : MonoBehaviour
             
             // Creating a little haptic feedback for the controller when the ball gets saved
             GetComponentInParent<XRBaseController>().SendHapticImpulse(.5f, .25f);
-            Destroy(col.gameObject, 4f);
+            
         }
     }
 

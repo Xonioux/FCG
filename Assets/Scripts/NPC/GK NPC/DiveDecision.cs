@@ -6,7 +6,9 @@ public class DiveDecision : MonoBehaviour
 {
     public GameObject[] diveOptions;
     public ShootBall sB;
-    int chosen;
+    public int chosen;
+    public bool jumpLeft;
+    public bool jumpRight;
 
     void Pick()
     {
@@ -23,9 +25,14 @@ public class DiveDecision : MonoBehaviour
             Pick();
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (chosen == 1)
         {
-            Pick();
+            jumpLeft = true;
         }
+        else if (chosen == 2)
+        {
+            jumpRight = true;
+        }
+        
     }
 }

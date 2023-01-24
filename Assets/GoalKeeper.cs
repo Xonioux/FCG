@@ -1,33 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class GoalKeeper : MonoBehaviour
 {
-    public GameObject dD;
-    
+    public DiveDecision db;
+    public GameObject ball;
+    public GameObject goal;
+    public Animator animator;
     
 
-    private void Start()
+    void Start() 
     {
-        AnimationOn();
+        animator.enabled = true;
+        animator = GetComponent<Animator>();
     }
- 
-    private void AnimationOn()
+
+    void Update() 
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (db.jumpLeft == true) 
         {
-            this.GetComponent<Animator>().enabled = true;
-            this.GetComponent<Animator>().Play("mixamo_com");
-        }
-        else if (Input.GetKeyDown(KeyCode.G))
+            animator.Play("mixamo_com 1");
+        } else if (db.jumpRight == true) 
         {
-            this.GetComponent<Animator>().enabled = true;
-            this.GetComponent<Animator>().Play("mixamo_com 1");
-        }
-        else if (dD.transform.position == new Vector3(dD.transform.position.x, dD.transform.position.y, dD.GetComponent<DiveDecision>().diveOptions[0].transform.position.z))
+            animator.Play("mixamo_com");
+        } else 
         {
-            this.GetComponent<Animator>().enabled = false;
+            animator.Play("idle");
         }
+
     }
+
 }
