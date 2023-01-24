@@ -7,9 +7,6 @@ public class BallForeshadowing : MonoBehaviour
     private Transform ball;
     public Vector3 hitpointBall;
 
-    // Checking if there is a invisible ball (cloned / instantiated) in the scene (NEEDS OPTIMIZATION!)
-    // More explaination: Unity calls a lot of errors because this ball will get destroyed after a short while, meaning that this code can't find the ball anymore.
-    // I have been trying to find a solution to this but still can't seem to find a way that works properly...
     private void Update()
     {
         ball = GameObject.Find("InvisibleBall").transform;

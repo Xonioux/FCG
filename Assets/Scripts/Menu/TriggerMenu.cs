@@ -12,7 +12,7 @@ public class TriggerMenu : MonoBehaviour
     public bool buttonEffected;
     bool menuClose;
 
-    string sceneName;
+    public string sceneName;
 
     void Start()
     {

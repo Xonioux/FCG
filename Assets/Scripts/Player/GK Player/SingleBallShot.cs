@@ -19,7 +19,8 @@ public class SingleBallShot : MonoBehaviour
     public float forceMultiplier = 10f;
 
     public bool ballShot;
-    private bool shotLoaded;
+    public bool ballHit;
+    public bool shotLoaded;
 
     void Update()
     {
@@ -52,7 +53,7 @@ public class SingleBallShot : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         Debug.Log("Fire in the hole");
-        //ballReal = Instantiate(Ball, transform.position, transform.rotation);
+        ballHit = true;
         Ball.GetComponent<Rigidbody>().AddForce(gameObject.transform.TransformDirection(Vector3.forward) * forceMultiplier, ForceMode.Impulse);
         ballShot = true;
     }
