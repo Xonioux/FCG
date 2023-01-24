@@ -60,6 +60,6 @@ public class AudioManager : MonoBehaviour
 
 //Notes for meself, use the line: 
 
-//  FindObjectOfType<AudioManager>().Play("Anthem");
+//  FindObjectOfType<AudioManager>().Play("SPNG NAME");
 
 //and you'll be all set
