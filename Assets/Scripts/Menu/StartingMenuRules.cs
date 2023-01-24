@@ -29,6 +29,10 @@ public class StartingMenuRules : MonoBehaviour
     {
         if (isStartingScene == true)
         {
+            //SOUNNNNNNNNNNNNNND//
+          //  FindObjectOfType<AudioManager>().Play("Crowd Sound");
+            //SOUNDDDDDDDDDDDDDDD//
+
             cB.moveSpeed = 5f;
             Time.timeScale = 1f;
             pS.SetActive(false);

@@ -15,7 +15,9 @@ public class Goal : MonoBehaviour
 
         if (col.gameObject.CompareTag("RealBall"))
         {
+            FindObjectOfType<AudioManager>().Play("Ball Hit");
             goalScored = true;
+            FindObjectOfType<AudioManager>().Play("Cheering");
         }
     }
 }

@@ -147,6 +147,11 @@ public class LevelManager : MonoBehaviour
             this.GetComponent<CountdownTimer>().enabled = true;
             if (timer.countdowntimerDone == true)
             {
+
+            //SOUNDDDDDDDDDDDDDDDDDDDDDDDS//    
+           // FindObjectOfType<AudioManager>().Play("Cheering");
+            //SOUNNNNNNNNNNNNNNNNNNNNNNNNNNNDDDDDDDDDDDDS//
+                
                 cB.moveSpeed = 5f;
                 if(shootingTutorial.activeInHierarchy == false && isShootingLevel == true)
                 {
