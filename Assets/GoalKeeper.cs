@@ -6,8 +6,6 @@ using UnityEngine.Animations;
 public class GoalKeeper : MonoBehaviour
 {
     public DiveDecision db;
-    public GameObject ball;
-    public GameObject goal;
     public Animator animator;
     
 

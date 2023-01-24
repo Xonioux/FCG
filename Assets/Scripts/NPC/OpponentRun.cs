@@ -31,10 +31,12 @@ public class OpponentRun : MonoBehaviour
                 hasArrived = false;
             }
 
+            Vector3 ballLook = new Vector3(ball.position.x, transform.position.y, ball.position.z);
+
             if (this.GetComponent<WaitUntilShot>() == null && hasArrived == true)
             {
                 this.GetComponent<Animator>().Play("Idle");
-                transform.LookAt(ball);
+                transform.LookAt(ballLook);
             }
         }
     }
