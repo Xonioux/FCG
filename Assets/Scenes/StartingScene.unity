@@ -68036,23 +68036,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103396817}
   m_Mesh: {fileID: 1560646820430254623, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
---- !u!1 &2105210680 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 53704309441185434, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
-  m_PrefabInstance: {fileID: 53704307995958741}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2105210683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105210680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785d25b2b520a6a41b9e1ef95881be27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2105437245
 GameObject:
   m_ObjectHideFlags: 0
@@ -69571,6 +69554,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 53704308934599887, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 293045291724614575, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730680809673015986, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714065318321648553, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883230830048543280, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

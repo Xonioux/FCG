@@ -3123,7 +3123,7 @@ Transform:
   - {fileID: 833964196}
   - {fileID: 40287781}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &181758204
 GameObject:
@@ -9762,7 +9762,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434889966
 GameObject:
@@ -9876,7 +9876,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &441592770
 GameObject:
@@ -26862,7 +26862,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179921794
 GameObject:
@@ -47851,6 +47851,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087828157}
   m_Mesh: {fileID: 4683316104543346635, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!328 &2091255225 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 8400361099796643689, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &2091255226 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 4442870598465285772, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &2091255227 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 274079559988903331, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2092764785
 GameObject:
   m_ObjectHideFlags: 0
@@ -49175,6 +49190,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11728918}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: knvbVP
+      value: 
+      objectReference: {fileID: 2091255227}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: stText
       value: 
       objectReference: {fileID: 11728919}
@@ -49190,6 +49209,14 @@ PrefabInstance:
       propertyPath: saveCheck
       value: 
       objectReference: {fileID: 633617222}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: euroborgVP
+      value: 
+      objectReference: {fileID: 2091255226}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: internationalVP
+      value: 
+      objectReference: {fileID: 2091255225}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: shootingTutorial
       value: 

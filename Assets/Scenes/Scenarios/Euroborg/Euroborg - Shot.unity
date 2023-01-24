@@ -19288,6 +19288,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1508848906}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: knvbVP
+      value: 
+      objectReference: {fileID: 1390604905}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: stText
       value: 
       objectReference: {fileID: 1508848904}
@@ -19299,6 +19303,14 @@ PrefabInstance:
       propertyPath: goalCheck
       value: 
       objectReference: {fileID: 1074264074}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: euroborgVP
+      value: 
+      objectReference: {fileID: 1390604904}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: internationalVP
+      value: 
+      objectReference: {fileID: 1390604903}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: shootingTutorial
       value: 
@@ -30463,6 +30475,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390017144}
   m_Mesh: {fileID: -9193184200935584902, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!328 &1390604903 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 8400361099796643689, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1508848902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1390604904 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 4442870598465285772, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1508848902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1390604905 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 274079559988903331, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1508848902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390620344
 GameObject:
   m_ObjectHideFlags: 0

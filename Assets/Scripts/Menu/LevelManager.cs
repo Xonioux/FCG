@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Video;
 
 public class LevelManager : MonoBehaviour
 {
@@ -13,6 +14,22 @@ public class LevelManager : MonoBehaviour
     public bool isShootingLevel;
     public bool isGoalkeepingLevel;
     public bool tutorialRead;
+
+    public VideoPlayer knvbVP;
+    public VideoPlayer euroborgVP;
+    public VideoPlayer internationalVP;
+
+    public VideoClip knvb1;
+    public VideoClip knvb2;
+    public VideoClip knvb3;
+
+    public VideoClip euroborg1;
+    public VideoClip euroborg2;
+    public VideoClip euroborg3;
+
+    public VideoClip international1;
+    public VideoClip international2;
+    public VideoClip international3;
     
     public TriggerMenu tM = null;
     public ShootBall sB = null;
@@ -35,64 +52,111 @@ public class LevelManager : MonoBehaviour
     public GameObject STScore;
     public GameObject STMiss;
 
+    string sceneName;
+
     void Start()
     {
         //Checking if which scene is active right now
         Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
+        sceneName = currentScene.name;
 
         if (sceneName == "Cup - GK")
         {
             isGoalkeepingLevel = true;
             isShootingLevel = false;
+            knvbVP.enabled = true;
+            euroborgVP.enabled = false;
+            internationalVP.enabled = false;
+            knvbVP.clip = knvb1;
+            knvbVP.isLooping = true;
         }
 
         if (sceneName == "Cup - Shot1")
         {
             isShootingLevel = true;
             isGoalkeepingLevel = false;
+            knvbVP.enabled = true;
+            euroborgVP.enabled = false;
+            internationalVP.enabled = false;
+            knvbVP.clip = knvb2;
+            knvbVP.isLooping = true;
         }
 
         if (sceneName == "Cup - Shot2")
         {
             isShootingLevel = true;
             isGoalkeepingLevel = false;
+            knvbVP.enabled = true;
+            euroborgVP.enabled = false;
+            internationalVP.enabled = false;
+            knvbVP.clip = knvb3;
+            knvbVP.isLooping = true;
         }
 
         if (sceneName == "Euroborg - GK1")
         {
             isGoalkeepingLevel = true;
             isShootingLevel = false;
+            knvbVP.enabled = false;
+            euroborgVP.enabled = true;
+            internationalVP.enabled = false;
+            euroborgVP.clip = euroborg1;
+            euroborgVP.isLooping = true;
         }
 
         if (sceneName == "Euroborg - Shot")
         {
             isGoalkeepingLevel = false;
             isShootingLevel = true;
+            knvbVP.enabled = false;
+            euroborgVP.enabled = true;
+            internationalVP.enabled = false;
+            euroborgVP.clip = euroborg2;
+            euroborgVP.isLooping = true;
         }
 
         if (sceneName == "Euroborg - GK2")
         {
             isGoalkeepingLevel = true;
             isShootingLevel = false;
+            knvbVP.enabled = false;
+            euroborgVP.enabled = true;
+            internationalVP.enabled = false;
+            euroborgVP.clip = euroborg3;
+            euroborgVP.isLooping = true;
         }
 
         if (sceneName == "International - GK")
         {
             isGoalkeepingLevel = true;
             isShootingLevel = false;
+            knvbVP.enabled = false;
+            euroborgVP.enabled = false;
+            internationalVP.enabled = true;
+            internationalVP.clip = international1;
+            internationalVP.isLooping = true;
         }
 
         if (sceneName == "International - Shot")
         {
             isGoalkeepingLevel = false;
             isShootingLevel = true;
+            knvbVP.enabled = false;
+            euroborgVP.enabled = false;
+            internationalVP.enabled = true;
+            internationalVP.clip = international2;
+            internationalVP.isLooping = true;
         }
 
         if (sceneName == "International - Penalty")
         {
             isGoalkeepingLevel = false;
             isShootingLevel = true;
+            knvbVP.enabled = false;
+            euroborgVP.enabled = false;
+            internationalVP.enabled = true;
+            internationalVP.clip = international3;
+            internationalVP.isLooping = true;
         }
         
 
@@ -199,29 +263,90 @@ public class LevelManager : MonoBehaviour
         {
             Debug.Log("Scored");
             STScore.SetActive(true);
+            if (sceneName == "Cup - GK" || sceneName == "Cup - Shot1" || sceneName == "Cup - Shot2")
+            {
+                knvbVP.Play();
+            }
+            else if (sceneName == "Euroborg - GK1" || sceneName == "Euroborg - GK2" || sceneName == "Euroborg - Shot")
+            {
+                euroborgVP.Play();
+            }
+            else if (sceneName == "International - GK" || sceneName == "International - Shot" || sceneName == "International - Penalty")
+            {
+                internationalVP.Play();
+            }
         }
         
         if (isShootingLevel == true && goalCheck.goalScored == false)
         {
             Debug.Log("Missed chance");
             STMiss.SetActive(true);
+            if (sceneName == "Cup - GK" || sceneName == "Cup - Shot1" || sceneName == "Cup - Shot2")
+            {
+                knvbVP.Play();
+            }
+            else if (sceneName == "Euroborg - GK1" || sceneName == "Euroborg - GK2" || sceneName == "Euroborg - Shot")
+            {
+                euroborgVP.Play();
+            }
+            else if (sceneName == "International - GK" || sceneName == "International - Shot" || sceneName == "International - Penalty")
+            {
+                internationalVP.Play();
+            }
         }
         
         if (isGoalkeepingLevel == true && Save.ballSaved == true && goalCheck.goalScored == false)
         {
             Debug.Log("Saved");
             GKSave.SetActive(true);
+            if (sceneName == "Cup - GK" || sceneName == "Cup - Shot1" || sceneName == "Cup - Shot2")
+            {
+                knvbVP.Play();
+            }
+            else if (sceneName == "Euroborg - GK1" || sceneName == "Euroborg - GK2" || sceneName == "Euroborg - Shot")
+            {
+                euroborgVP.Play();
+            }
+            else if (sceneName == "International - GK" || sceneName == "International - Shot" || sceneName == "International - Penalty")
+            {
+                internationalVP.Play();
+            }
         }
         
         if (isGoalkeepingLevel == true &&  goalCheck.goalScored == true)
         {
             Debug.Log("Scored against you");
             GKFail.SetActive(true);
+            if (sceneName == "Cup - GK" || sceneName == "Cup - Shot1" || sceneName == "Cup - Shot2")
+            {
+                knvbVP.Play();
+            }
+            else if (sceneName == "Euroborg - GK1" || sceneName == "Euroborg - GK2" || sceneName == "Euroborg - Shot")
+            {
+                euroborgVP.Play();
+            }
+            else if (sceneName == "International - GK" || sceneName == "International - Shot" || sceneName == "International - Penalty")
+            {
+                internationalVP.Play();
+            }
         }
 
         if (isGoalkeepingLevel == true && Save.ballSaved == false && goalCheck.goalScored == false)
         {
             Debug.Log("Missed shot");
+            GKSave.SetActive(true);
+            if (sceneName == "Cup - GK" || sceneName == "Cup - Shot1" || sceneName == "Cup - Shot2")
+            {
+                knvbVP.Play();
+            }
+            else if (sceneName == "Euroborg - GK1" || sceneName == "Euroborg - GK2" || sceneName == "Euroborg - Shot")
+            {
+                euroborgVP.Play();
+            }
+            else if (sceneName == "International - GK" || sceneName == "International - Shot" || sceneName == "International - Penalty")
+            {
+                internationalVP.Play();
+            }
         }
         
     }

@@ -7054,6 +7054,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 730680809673015986, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
 --- !u!114 &1399817100 stripped
@@ -9104,6 +9108,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1399817109}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: knvbVP
+      value: 
+      objectReference: {fileID: 2090299019}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: stText
       value: 
       objectReference: {fileID: 1399817107}
@@ -9119,6 +9127,14 @@ PrefabInstance:
       propertyPath: saveCheck
       value: 
       objectReference: {fileID: 778228544}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: euroborgVP
+      value: 
+      objectReference: {fileID: 2090299018}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: internationalVP
+      value: 
+      objectReference: {fileID: 2090299017}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: shootingTutorial
       value: 
@@ -10104,6 +10120,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762b9ee8ff66ef54ebdb2f4bfde2d77d, type: 3}
+--- !u!328 &2090299017 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 8400361099796643689, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1399817099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &2090299018 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 4442870598465285772, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1399817099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &2090299019 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 274079559988903331, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1399817099}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &919132147547461769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3705710558577480654, guid: c8703ea7e3dddcf4585417ca4e813a1f, type: 3}

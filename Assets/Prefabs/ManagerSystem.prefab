@@ -265,6 +265,42 @@ PrefabInstance:
       propertyPath: cB
       value: 
       objectReference: {fileID: 7291136314694149749}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: knvb1
+      value: 
+      objectReference: {fileID: 32900000, guid: 4abef2d6b7f6f194ea21cb61f4d105fa, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: knvb2
+      value: 
+      objectReference: {fileID: 32900000, guid: 6ef65582405be734184f0557ee4aa6ac, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: knvb3
+      value: 
+      objectReference: {fileID: 32900000, guid: 4cc7e31e5b634274bbe8e3a2455a6c12, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: euroborg1
+      value: 
+      objectReference: {fileID: 32900000, guid: 0936e8525d94cc14091774f16973885d, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: euroborg2
+      value: 
+      objectReference: {fileID: 32900000, guid: 1b7ebba77fcad324ebb7c0816d7fe18a, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: euroborg3
+      value: 
+      objectReference: {fileID: 32900000, guid: 224341f94d8bb7c46b9a867df0cc4d7e, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: international1
+      value: 
+      objectReference: {fileID: 32900000, guid: 096bc4b5a1bb1d841857beff50661c58, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: international2
+      value: 
+      objectReference: {fileID: 32900000, guid: 122262542162712419ee6ff78b512e9d, type: 3}
+    - target: {fileID: 6071331223568219232, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
+      propertyPath: international3
+      value: 
+      objectReference: {fileID: 32900000, guid: cf3a3448b705cd64eb7ae20c8662d847, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83b7870814fa3f2498060f159cba88ac, type: 3}
 --- !u!4 &544726912975244870 stripped

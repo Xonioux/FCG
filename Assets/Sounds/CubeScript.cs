@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollideCheck : MonoBehaviour
+public class CubeScript : MonoBehaviour
 {
     private bool isCollided;
 

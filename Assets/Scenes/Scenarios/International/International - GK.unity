@@ -42859,6 +42859,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765021941}
   m_Mesh: {fileID: -3355406722697714345, guid: 2375d5a37f51ea14d9ef8bfcda72f7af, type: 3}
+--- !u!328 &1766479050 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 8400361099796643689, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1766479051 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 4442870598465285772, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1766479052 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 274079559988903331, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 11728915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1767023291
 GameObject:
   m_ObjectHideFlags: 0
@@ -50924,6 +50939,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11728918}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: knvbVP
+      value: 
+      objectReference: {fileID: 1766479052}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: stText
       value: 
       objectReference: {fileID: 11728919}
@@ -50939,6 +50958,14 @@ PrefabInstance:
       propertyPath: saveCheck
       value: 
       objectReference: {fileID: 633617222}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: euroborgVP
+      value: 
+      objectReference: {fileID: 1766479051}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: internationalVP
+      value: 
+      objectReference: {fileID: 1766479050}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: shootingTutorial
       value: 

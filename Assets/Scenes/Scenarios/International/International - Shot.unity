@@ -4715,6 +4715,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1490716354}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: knvbVP
+      value: 
+      objectReference: {fileID: 711020115}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: stText
       value: 
       objectReference: {fileID: 1490716352}
@@ -4742,6 +4746,14 @@ PrefabInstance:
       propertyPath: saveCheck
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: euroborgVP
+      value: 
+      objectReference: {fileID: 711020114}
+    - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
+      propertyPath: internationalVP
+      value: 
+      objectReference: {fileID: 711020113}
     - target: {fileID: 8600728659677922443, guid: 302074ef50ca754429acb272af921c42, type: 3}
       propertyPath: shootingTutorial
       value: 
@@ -10792,7 +10804,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &432444939
 GameObject:
@@ -17698,6 +17710,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f2abf0af0d58fd4c91922edefff2a1b, type: 3}
+--- !u!328 &711020113 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 8400361099796643689, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1490716350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &711020114 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 4442870598465285772, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1490716350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &711020115 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 274079559988903331, guid: b82faf042f0f0e043901fef2bf3845a7, type: 3}
+  m_PrefabInstance: {fileID: 1490716350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715284110
 GameObject:
   m_ObjectHideFlags: 0
@@ -28789,7 +28816,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1192282059
 GameObject:
@@ -37920,7 +37947,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544876437
 GameObject:
@@ -50909,7 +50936,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138316493
 GameObject:
