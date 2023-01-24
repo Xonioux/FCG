@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DA949528" = "occlusion culling"
+	"last_search.DA949528" = "occ"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "menu"
 }
@@ -56,6 +56,10 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"b"
+	"anima"
+	"pr"
+	"c"
 	"occlusion cull"
 ]
 searchItemFavorites = [
