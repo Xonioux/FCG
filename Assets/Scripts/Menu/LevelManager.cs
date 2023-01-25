@@ -52,7 +52,7 @@ public class LevelManager : MonoBehaviour
     public GameObject STScore;
     public GameObject STMiss;
 
-    string sceneName;
+    public string sceneName;
 
     void Start()
     {
